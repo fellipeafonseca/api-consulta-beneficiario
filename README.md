@@ -13,8 +13,7 @@ Automação em Python para consultar dados de beneficiários de programas sociai
 
 ## 🔑 Obter sua chave de API
 
-1. Acesse o Portal da Transparência:  
-   https://portaldatransparencia.gov.br/api-de-dados/cadastrar-email  
+1. Acesse o Portal da Transparência: https://portaldatransparencia.gov.br/api-de-dados/cadastrar-email  
 2. Faça login com sua conta **Gov.br**.  
 3. Cadastre seu e‑mail e aguarde a chave chegar por e‑mail (pode levar alguns minutos).  
 4. Ao receber, copie o valor da **“Chave-API-Dados”**.
@@ -30,28 +29,37 @@ Automação em Python para consultar dados de beneficiários de programas sociai
 
 2. Crie o arquivo .env na raiz com este conteúdo:
 
-env
-Copiar
-Editar
-API_KEY=sua_chave_api_aqui
+ API_KEY=sua_chave_api_aqui
 NIS=12345678900
 CPF=12345678900
 MES_ANO=202201
-API_KEY → chave recebida do Portal da Transparência
 
-NIS → seu NIS de teste
+- API_KEY → chave recebida do Portal da Transparência
+- NIS → seu NIS de teste
+- CPF → seu CPF de teste
+- MES_ANO → mês e ano no formato AAAAMM (ex: 202201)
 
-CPF → seu CPF de teste
+3. Instale as dependências:
 
-MES_ANO → mês e ano no formato AAAAMM (ex: 202201)
-
-
-
-
-
+bash
+pip install -r requirements.txt
 
 
 
+## ▶️ Como rodar
+Dentro da pasta do projeto, execute:
+bash
+- python consulta_api.py
+
+Isso fará três consultas:
+
+1. Auxílio Brasil por NIS
+
+2. Bolsa Família por CPF/NIS
+
+3. Auxílio Emergencial por CPF/NIS
+
+Você verá no console o JSON retornado (ou mensagens de erro em caso de falha).
 
 ## 🔧 Detalhes Técnicos
 1. **Retry automático: até 3 tentativas em caso de falha de conexão ou resposta não-200.
