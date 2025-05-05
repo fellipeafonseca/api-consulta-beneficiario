@@ -28,11 +28,11 @@ Automação em Python para consultar dados de beneficiários de programas sociai
    cd api-consulta-beneficiario
 
 2. Crie o arquivo .env na raiz com este conteúdo:
-
- API_KEY=sua_chave_api_aqui
-NIS=12345678900
-CPF=12345678900
-MES_ANO=202201
+   ```env
+   API_KEY=sua_chave_api_aqui
+   NIS=12345678900
+   CPF=12345678900
+   MES_ANO=202201
 
 - API_KEY → chave recebida do Portal da Transparência
 - NIS → seu NIS de teste
@@ -40,16 +40,13 @@ MES_ANO=202201
 - MES_ANO → mês e ano no formato AAAAMM (ex: 202201)
 
 3. Instale as dependências:
-
-bash
-pip install -r requirements.txt
-
-
+    ```bash
+   pip install -r requirements.txt
 
 ## ▶️ Como rodar
-Dentro da pasta do projeto, execute:
-bash
-- python consulta_api.py
+1. Dentro da pasta do projeto, execute:
+   ```bash
+    python consulta_api.py
 
 Isso fará três consultas:
 
