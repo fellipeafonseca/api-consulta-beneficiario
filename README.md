@@ -58,6 +58,9 @@ Isso fará três consultas:
 
 Você verá no console o JSON retornado (ou mensagens de erro em caso de falha).
 
+![image](https://github.com/user-attachments/assets/b8bab1d1-c574-4127-b272-a11496e5174c)
+
+
 ## 🔧 Detalhes Técnicos
 1. **Retry automático: até 3 tentativas em caso de falha de conexão ou resposta não-200.
 
