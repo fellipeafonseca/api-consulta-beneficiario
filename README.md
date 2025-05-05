@@ -63,8 +63,6 @@ MES_ANO → mês e ano no formato AAAAMM (ex: 202201)
 
 
 ## 📚 Referências
-Documentação geral das APIs:
-https://api.portaldatransparencia.gov.br/swagger-ui.html
+- Documentação geral das APIs: https://api.portaldatransparencia.gov.br/swagger-ui.html
 
-Exemplos de uso:
-https://portaldatransparencia.gov.br/pagina-interna/603579-api-de-dados-exemplos-de-uso
+- Exemplos de uso: https://portaldatransparencia.gov.br/pagina-interna/603579-api-de-dados-exemplos-de-uso
