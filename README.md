@@ -26,8 +26,8 @@ Automação em Python para consultar dados de beneficiários de programas sociai
 
 1. **Clone este repositório** (ou baixe os arquivos):
    ```bash
-   git clone https://github.com/fellipeafonseca/rpa-consulta-beneficiarios.git
-   cd rpa-consulta-beneficiarios
+   git clone https://github.com/fellipeafonseca/api-consulta-beneficiario.git
+   cd api-consulta-beneficiario
 
 2. Crie o arquivo .env na raiz com este conteúdo:
 
