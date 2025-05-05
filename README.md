@@ -54,9 +54,17 @@ MES_ANO → mês e ano no formato AAAAMM (ex: 202201)
 
 
 
-🔧 Detalhes Técnicos
-Retry automático: até 3 tentativas em caso de falha de conexão ou resposta não-200.
+## 🔧 Detalhes Técnicos
+1. **Retry automático: até 3 tentativas em caso de falha de conexão ou resposta não-200.
 
-Logging: cronologia das tentativas e erros (nível INFO, WARNING e ERROR).
+2. **Logging: cronologia das tentativas e erros (nível INFO, WARNING e ERROR).
 
-Timeout de 10s em cada requisição para evitar travamento.
+3. **Timeout de 10s em cada requisição para evitar travamento.
+
+
+## 📚 Referências
+Documentação geral das APIs:
+https://api.portaldatransparencia.gov.br/swagger-ui.html
+
+Exemplos de uso:
+https://portaldatransparencia.gov.br/pagina-interna/603579-api-de-dados-exemplos-de-uso
