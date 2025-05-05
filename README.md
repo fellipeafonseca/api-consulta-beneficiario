@@ -5,10 +5,9 @@ Automação em Python para consultar dados de beneficiários de programas sociai
 ---
 
 ## 🚀 Pré-requisitos
-
-1. **Python 3.7+** instalado  
-2. **Chrome/Firefox** (para outras automações, se desejar)  
-3. **Conta Gov.br (nível Prata ou Ouro)** para obter a chave de API  
+- Python 3.7+** instalado  
+- Chrome/Firefox** (para outras automações, se desejar)  
+- Conta Gov.br (nível Prata ou Ouro)** para obter a chave de API  
 
 ---
 
