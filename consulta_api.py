@@ -30,9 +30,10 @@ def _request_with_retry(url: str, params: dict) -> dict:
             resp = requests.get(url, headers=HEADERS, params=params, timeout=10)
             if resp.ok:
                 data = resp.json()
+                logging.info(f'Status Code: {resp.status_code}')
                 logging.info(f'{len(data)} resultado(s) encontrado(s):')
                 return data
-            logging.warning(f"[{resp.status_code}] {resp.text}")
+            logging.warning(f"Status Code: [{resp.status_code}] {resp.text}")
         except Exception as e:
             logging.error(f"Erro na requisição: {e}")
         if attempt < RETRY_ATTEMPTS:
